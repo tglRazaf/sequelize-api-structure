@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <h1 class="title"></h1>
+      <div class="columns is-2">
+        <div class="column form is-4">
+          <div class="field">
+            <label for="">Name</label>
+            <input class="input is-small" id="name" type="text" placeholder="your name please">
+          </div>
+          <div class="field">
+            <label for="">Number</label>
+            <input class="input is-small" id="number" type="text" placeholder="your name please">
+          </div>
+          <div class="field">
+            <label for="">Date of birth</label>
+            <input class="input is-small" id="date" type="date" placeholder="your name please">
+          </div>
+          <div class="buttons">
+            <button class="button is-small is-light" id="submit">submit</button>
+          </div>
+        </div>
+        <table class="table column is-fullwidth is-hoverable">
+          <thead>
+            <tr>
+              <td>Id</td>
+              <td>Name</td>
+              <td>Number</td>
+              <td>Actions</td>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./axios.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

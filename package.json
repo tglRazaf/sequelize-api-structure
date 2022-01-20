@@ -1,0 +1,30 @@
+{
+  "name": "vue-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-mailer": "^0.3.1",
+    "multer": "^1.4.3",
+    "mysql2": "^2.3.3-rc.0",
+    "nodemon": "^2.0.6",
+    "sequelize": "^6.9.0",
+    "sequelize-cli": "^6.3.0"
+  },
+  "scripts": {
+    "start": "nodemon -r dotenv/config server.js",
+    "client": "cd client && npm run dev",
+    "install-client": "cd client && npm install"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "stephano",
+  "license": "ISC"
+}
